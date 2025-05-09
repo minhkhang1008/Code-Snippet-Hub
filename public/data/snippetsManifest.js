@@ -2,7 +2,7 @@ var snippetsManifest = [
     {
         id: '1', 
         title: 'Chuyển đổi hệ cơ số 10 sang hệ cơ số b', 
-        filePath: '../public/data/code_files/conversion.cpp', 
+        filePath: '/data/code_files/conversion.cpp', 
         language: 'cpp', 
         description: 'Hàm này chuyển đổi một số nguyên `n` từ hệ cơ số 10 sang một chuỗi biểu diễn số đó trong hệ cơ số `b`. Hỗ trợ các hệ cơ số từ 2 đến 36.', 
         tags: ['Algorithms', 'Base Conversion', 'String Manipulation', 'Math'], 
@@ -18,7 +18,7 @@ var snippetsManifest = [
     {
         id: '2',
         title: 'Tính Giai Thừa (Factorial)',
-        filePath: '../public/data/code_files/factorial.cpp', 
+        filePath: '/data/code_files/factorial.cpp', 
         language: 'cpp',
         description: 'Hàm tính giai thừa của một số nguyên không âm `n`. Giai thừa của `n` (ký hiệu `n!`) là tích của tất cả các số nguyên dương từ 1 đến `n`.',
         tags: ['Algorithms', 'Math', 'Iterative'],
@@ -34,7 +34,7 @@ var snippetsManifest = [
     {
         id: '3', 
         title: 'Binary Search',
-        filePath: '../public/data/code_files/binary_search.cpp', 
+        filePath: '/data/code_files/binary_search.cpp', 
         language: 'cpp',
         description: 'Hàm tìm kiếm một phần tử `target` trong một mảng `arr` đã được sắp xếp. Trả về chỉ số của phần tử nếu tìm thấy, ngược lại trả về -1.',
         tags: ['Algorithms', 'Searching', 'Divide and Conquer'],
@@ -50,7 +50,7 @@ var snippetsManifest = [
     {
         id: '4', 
         title: 'Depth First Search (DFS) with Examples',
-        filePath: '../public/data/code_files/dfs_examples.cpp', 
+        filePath: '/data/code_files/dfs_examples.cpp', 
         language: 'cpp',
         description: 'Thực hiện thuật toán Tìm kiếm theo chiều sâu (DFS) trên đồ thị. Bao gồm một template cơ bản, một ví dụ đơn giản về kiểm tra tính liên thông, và một ví dụ phức tạp hơn về tìm chu trình trong đồ thị vô hướng.',
         tags: ['Algorithms', 'Graph Theory', 'DFS', 'Recursion', 'Connectivity', 'Cycle Detection'],
@@ -66,7 +66,7 @@ var snippetsManifest = [
     {
         id: '5', 
         title: 'Breadth-First Search (BFS) with Examples',
-        filePath: '../public/data/code_files/bfs_examples.cpp', 
+        filePath: '/data/code_files/bfs_examples.cpp', 
         language: 'cpp',
         description: 'Thực hiện thuật toán Tìm kiếm theo chiều rộng (BFS) trên đồ thị. Bao gồm một template cơ bản, ví dụ tìm đường đi ngắn nhất trong đồ thị không trọng số, và ví dụ kiểm tra tính hai phía của đồ thị.',
         tags: ['Algorithms', 'Graph Theory', 'BFS', 'Queue', 'Shortest Path', 'Bipartite Check'],
@@ -82,7 +82,7 @@ var snippetsManifest = [
     {
         id: '6', 
         title: 'Sàng Eratosthenes (Sieve of Eratosthenes)',
-        filePath: '../public/data/code_files/sieve_eratosthenes.cpp',
+        filePath: '/data/code_files/sieve_eratosthenes.cpp',
         language: 'cpp',
         description: 'Thuật toán Sàng Eratosthenes để tìm tất cả các số nguyên tố nhỏ hơn hoặc bằng một số nguyên `n` cho trước. Bao gồm ví dụ đếm số nguyên tố và sàng lưu trữ ước số nguyên tố nhỏ nhất (SPF) để phân tích thừa số nguyên tố nhanh.',
         tags: ['Algorithms', 'Math', 'Number Theory', 'Prime Numbers', 'Sieve'],
@@ -98,7 +98,7 @@ var snippetsManifest = [
     {
         id: '7', 
         title: 'Dãy con tăng dài nhất (Longest Increasing Subsequence - LIS)',
-        filePath: '../public/data/code_files/lis.cpp',
+        filePath: '/data/code_files/lis.cpp',
         language: 'cpp',
         description: 'Tìm độ dài của dãy con tăng dài nhất trong một mảng các số. Bao gồm hai cách tiếp cận: một giải pháp O(n log n) hiệu quả và một giải pháp quy hoạch động O(n^2) dễ hiểu hơn.',
         tags: ['Algorithms', 'Dynamic Programming', 'Binary Search', 'LIS'],
@@ -114,7 +114,7 @@ var snippetsManifest = [
     {
         id: '8', 
         title: 'Dãy con chung dài nhất (Longest Common Subsequence - LCS)',
-        filePath: '../public/data/code_files/lcs.cpp',
+        filePath: '/data/code_files/lcs.cpp',
         language: 'cpp',
         description: 'Tính độ dài của dãy con chung dài nhất giữa hai chuỗi (hoặc mảng). Bao gồm hàm tính độ dài và hàm tái tạo một trong các chuỗi LCS.',
         tags: ['Algorithms', 'Dynamic Programming', 'LCS', 'String Manipulation'],
@@ -130,7 +130,7 @@ var snippetsManifest = [
     {
         id: '9', 
         title: 'Thuật toán Tham lam (Greedy Algorithms) với Ví dụ',
-        filePath: '../public/data/code_files/greedy_examples.cpp',
+        filePath: '/data/code_files/greedy_examples.cpp',
         language: 'cpp',
         description: 'Minh họa khái niệm thuật toán tham lam. Bao gồm một template ý tưởng chung, ví dụ đơn giản về bài toán Sắp xếp hoạt động (Activity Selection), và ví dụ phức tạp hơn về xây dựng cây Huffman cho Mã hóa Huffman.',
         tags: ['Algorithms', 'Greedy', 'Optimization', 'Activity Selection', 'Huffman Coding', 'Priority Queue'],
@@ -146,7 +146,7 @@ var snippetsManifest = [
     {
         id: '10', 
         title: 'Chia để trị (Divide and Conquer) với Ví dụ',
-        filePath: '../public/data/code_files/divide_and_conquer_examples.cpp',
+        filePath: '/data/code_files/divide_and_conquer_examples.cpp',
         language: 'cpp',
         description: 'Minh họa mô hình Chia để trị. Bao gồm một template ý tưởng chung, ví dụ đơn giản về Sắp xếp trộn (Merge Sort), và ví dụ phức tạp hơn về thuật toán Quick Select (tìm phần tử nhỏ thứ k).',
         tags: ['Algorithms', 'Divide and Conquer', 'Merge Sort', 'Quick Select', 'Recursion', 'Sorting', 'Selection'],
@@ -162,7 +162,7 @@ var snippetsManifest = [
     {
         id: '11', 
         title: 'Quy hoạch động (Dynamic Programming - DP) với Ví dụ',
-        filePath: '../public/data/code_files/dynamic_programming_examples.cpp',
+        filePath: '/data/code_files/dynamic_programming_examples.cpp',
         language: 'cpp',
         description: 'Giới thiệu kỹ thuật Quy hoạch động (DP). Bao gồm template ý tưởng cho cả bottom-up (tabulation) và top-down (memoization), ví dụ đơn giản về bài toán Cái túi 0/1 (0/1 Knapsack), và ví dụ phức tạp hơn về bài toán Đổi tiền (Coin Change - tìm số đồng xu ít nhất).',
         tags: ['Algorithms', 'Dynamic Programming', 'DP', 'Optimization', 'Knapsack', 'Coin Change', 'Memoization', 'Tabulation'],
@@ -178,7 +178,7 @@ var snippetsManifest = [
     {
         id: '12', 
         title: 'Xử lý Bit (Bit Handling / Bit Manipulation)',
-        filePath: '../public/data/code_files/bit_handling_examples.cpp',
+        filePath: '/data/code_files/bit_handling_examples.cpp',
         language: 'cpp',
         description: 'Trình bày các kỹ thuật và thao tác cơ bản trên bit của số nguyên. Bao gồm các hàm lấy/đặt/xóa/đảo bit, đếm số bit 1, kiểm tra lũy thừa của 2. Ví dụ minh họa cách kiểm tra tính chẵn lẻ, tạo tất cả tập con, và tìm số duy nhất trong mảng.',
         tags: ['Algorithms', 'Bit Manipulation', 'Bitwise Operations', 'Optimization', 'Subsets'],
@@ -194,7 +194,7 @@ var snippetsManifest = [
     {
         id: '13', 
         title: 'Xử lý Tập con (Subset Handling) - Đệ quy',
-        filePath: '../public/data/code_files/subset_handling_recursive.cpp',
+        filePath: '/data/code_files/subset_handling_recursive.cpp',
         language: 'cpp',
         description: 'Minh họa cách tạo và xử lý các tập con của một tập hợp cho trước bằng phương pháp đệ quy (quay lui/backtracking). Bao gồm template chung, ví dụ in tất cả tập con, và ví dụ tìm tất cả tập con có tổng bằng một giá trị K cho trước.',
         tags: ['Algorithms', 'Recursion', 'Backtracking', 'Subsets', 'Combinatorics', 'Subset Sum'],
@@ -210,7 +210,7 @@ var snippetsManifest = [
     {
         id: '14', 
         title: 'Gặp ở giữa (Meet in the Middle)',
-        filePath: '../public/data/code_files/meet_in_the_middle.cpp',
+        filePath: '/data/code_files/meet_in_the_middle.cpp',
         language: 'cpp',
         description: 'Minh họa kỹ thuật Gặp ở giữa (Meet in the Middle) để giải quyết các bài toán (thường là liên quan đến tập con) có độ phức tạp hàm mũ. Kỹ thuật này chia bài toán thành hai nửa, giải từng nửa, sau đó kết hợp kết quả. Ví dụ cụ thể là đếm số tập con có tổng bằng K.',
         tags: ['Algorithms', 'Optimization', 'Meet in the Middle', 'Subsets', 'Subset Sum', 'Combinatorics'],
@@ -226,7 +226,7 @@ var snippetsManifest = [
     {
         id: '15', 
         title: "Thuật toán Dijkstra (Dijkstra's Algorithm)",
-        filePath: '../public/data/code_files/dijkstra.cpp',
+        filePath: '/data/code_files/dijkstra.cpp',
         language: 'cpp',
         description: 'Tìm đường đi ngắn nhất từ một đỉnh nguồn đến tất cả các đỉnh khác trong đồ thị có trọng số cạnh không âm. Sử dụng hàng đợi ưu tiên (priority queue) để tối ưu hóa việc chọn đỉnh tiếp theo.',
         tags: ['Algorithms', 'Graph Theory', 'Shortest Path', 'Dijkstra', 'Priority Queue', 'Weighted Graph'],
@@ -242,7 +242,7 @@ var snippetsManifest = [
     {
         id: '16', 
         title: 'Cấu trúc dữ liệu Tập hợp rời rạc (Disjoint Set Union - DSU)',
-        filePath: '../public/data/code_files/dsu.cpp',
+        filePath: '/data/code_files/dsu.cpp',
         language: 'cpp',
         description: 'Triển khai cấu trúc dữ liệu Disjoint Set Union (còn gọi là Union-Find) với tối ưu hóa nén đường (path compression) và hợp theo kích thước (union by size/rank). Dùng để quản lý các tập hợp không giao nhau một cách hiệu quả.',
         tags: ['Data Structures', 'Algorithms', 'DSU', 'Union-Find', 'Graph Theory', 'Connectivity'],
@@ -258,7 +258,7 @@ var snippetsManifest = [
     {
         id: '17', 
         title: 'Thuật toán Knuth-Morris-Pratt (KMP)',
-        filePath: '../public/data/code_files/kmp.cpp',
+        filePath: '/data/code_files/kmp.cpp',
         language: 'cpp',
         description: 'Thuật toán tìm kiếm chuỗi KMP hiệu quả để tìm tất cả các lần xuất hiện của một chuỗi "mẫu" (pattern) trong một chuỗi "văn bản" (text). Nó sử dụng một mảng tiền xử lý gọi là LPS (Longest Proper Prefix Suffix) để tránh so sánh lại các ký tự không cần thiết khi xảy ra không khớp.',
         tags: ['Algorithms', 'String Matching', 'KMP', 'Pattern Searching', 'LPS Array'],
