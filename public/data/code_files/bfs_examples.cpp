@@ -1,5 +1,4 @@
 // Template for BFS on a graph (adjacency list)
-// Assumes 'queue', 'vector' are available.
 void bfs_template(int start_node, int num_nodes, const vector<vector<int>>& adj, function<void(int)> process_node) {
     vector<bool> visited(num_nodes + 1, false); // Assuming 1-based or 0-based indexing handled by num_nodes
     queue<int> q;

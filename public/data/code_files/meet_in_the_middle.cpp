@@ -1,12 +1,10 @@
-// Assumes 'vector', 'numeric_limits', 'algorithm' (for sort, lower_bound/upper_bound), 'map' or 'unordered_map' are available.
-
-// General Idea for Meet in the Middle for Subset Sum type problems:
-// Problem: Given a set of N numbers, find if there's a subset with sum K, or count such subsets.
-// If N is large (e.g., N=40), O(2^N) is too slow.
-// Meet in the Middle splits N into N/2 and N - N/2.
-// Generates all possible sums for the first half (sums1, size up to 2^(N/2)).
-// Generates all possible sums for the second half (sums2, size up to 2^(N - N/2)).
-// Then, for each sum `s1` in `sums1`, try to find `K - s1` in `sums2`.
+General Idea for Meet in the Middle for Subset Sum type problems:
+Problem: Given a set of N numbers, find if there's a subset with sum K, or count such subsets.
+If N is large (e.g., N=40), O(2^N) is too slow.
+Meet in the Middle splits N into N/2 and N - N/2.
+Generates all possible sums for the first half (sums1, size up to 2^(N/2)).
+Generates all possible sums for the second half (sums2, size up to 2^(N - N/2)).
+Then, for each sum `s1` in `sums1`, try to find `K - s1` in `sums2`.
 
 // Helper function to generate all possible subset sums for a given part of the array
 void generateSubsetSums(const vector<int>& arr, int start_idx, int end_idx, long long current_sum, vector<long long>& sums_list) {

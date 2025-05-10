@@ -1,17 +1,25 @@
 // Basic Sieve of Eratosthenes to find all primes up to n
-// Assumes 'vector' is available.
-vector<bool> sieveEratosthenes(int n) {
-    vector<bool> is_prime(n + 1, true);
-    if (n >= 0) is_prime[0] = false;
-    if (n >= 1) is_prime[1] = false;
 
+vector<int>Primes;
+void SieveOfEratosthenes(int n) {
+    // Create a boolean array "prime[0..n]" and initialize
+    // all entries it as true. A value in prime[i] will
+    // finally be false if i is Not a prime, else true.
+    vector<bool> prime(n + 1, true);
     for (int p = 2; p * p <= n; p++) {
-        if (is_prime[p]) {
+        if (prime[p] == true) {
+            // Update all multiples of p greater than or
+            // equal to the square of it numbers which are
+            // multiple of p and are less than p^2 are
+            // already been marked.
             for (int i = p * p; i <= n; i += p)
-                is_prime[i] = false;
+                prime[i] = false;
         }
     }
-    return is_prime;
+
+    for (int p = 2; p <= n; p++)
+        if (prime[p])
+            Primes.push_back(p);
 }
 
 // -----------------------------

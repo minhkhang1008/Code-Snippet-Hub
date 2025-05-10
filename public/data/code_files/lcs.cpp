@@ -1,6 +1,5 @@
 // Calculates the length of the Longest Common Subsequence (LCS)
 // of two strings s1 and s2.
-// Assumes 'string', 'vector', 'max' are available.
 int longestCommonSubsequence(string s1, string s2) {
     int m = s1.length();
     int n = s2.length();

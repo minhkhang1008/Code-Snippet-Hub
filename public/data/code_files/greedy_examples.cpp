@@ -1,29 +1,29 @@
 // General structure/idea for a Greedy Algorithm function:
 // (This is highly problem-dependent, so a strict template is hard)
-/*
+
 ReturnType solveGreedyProblem(ProblemInputType input) {
-    // 1. Initialize solution structure
+    1. Initialize solution structure
     SolutionStructure solution;
 
-    // 2. Make a greedy choice:
-    //    Often involves sorting the input or using a priority queue
-    //    to easily pick the "best" local option at each step.
-    //    while (problem_not_fully_solved && choices_available) {
-    //        CurrentChoice choice = selectGreedily(input, current_state);
-    //
-    //        // 3. Check if choice is valid/feasible
-    //        if (isValid(choice, solution)) {
-    //            // 4. Add choice to solution
-    //            addToSolution(solution, choice);
-    //            updateState(input, current_state, choice); // e.g., remove chosen item
-    //        } else {
-    //            // Optional: handle invalid choice (e.g., discard, try another)
-    //        }
-    //    }
-    // 5. Return solution
+    2. Make a greedy choice:
+       Often involves sorting the input or using a priority queue
+       to easily pick the "best" local option at each step.
+       while (problem_not_fully_solved && choices_available) {
+           CurrentChoice choice = selectGreedily(input, current_state);
+    
+           3. Check if choice is valid/feasible
+           if (isValid(choice, solution)) {
+               4. Add choice to solution
+               addToSolution(solution, choice);
+               updateState(input, current_state, choice); // e.g., remove chosen item
+           } else {
+               Optional: handle invalid choice (e.g., discard, try another)
+           }
+       }
+    5. Return solution
     return solution;
 }
-*/
+
 
 // Represents an activity with start and finish times
 struct Activity {
@@ -42,7 +42,6 @@ bool compareActivities(const Activity& a, const Activity& b) {
 // Simple Example: Activity Selection Problem
 // Given a set of activities with start and finish times, select the maximum
 // number of non-overlapping activities that can be performed by a single person.
-// Assumes 'vector', 'sort', 'Activity' struct, 'compareActivities' are available.
 vector<Activity> selectActivities(vector<Activity>& activities) {
     vector<Activity> selected_activities;
     if (activities.empty()) {
@@ -86,7 +85,6 @@ vector<Activity> result = selectActivities(acts);
 
 // Complicated Example: Huffman Coding (Building the Huffman Tree)
 // Given characters and their frequencies, build a Huffman tree for prefix codes.
-// Assumes 'string', 'vector', 'queue', 'map', 'algorithm' (for sort/heap) are available.
 // Node for Huffman Tree
 struct MinHeapNode {
     char data;             // Character

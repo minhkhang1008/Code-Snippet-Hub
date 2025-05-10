@@ -23,7 +23,6 @@ ResultType solveDivideAndConquer(ProblemInput input) {
 
 // Simple Example: Merge Sort
 // Sorts an array/vector using the divide and conquer paradigm.
-// Assumes 'vector', 'begin', 'end', 'iterator' concepts are available.
 
 // Merge two sorted subarrays arr[l..m] and arr[m+1..r]
 void merge(vector<int>& arr, int l, int m, int r) {
